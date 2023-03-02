@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Phone Number Groups</title>
+	<style type="text/css">
+        /* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: #f0f2f5;
+}
+
+header {
+  background-color: #FFD700;
+  color: #000000;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  padding: 20px;
+}
+
+#sidebar {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin-right: 20px;
+  flex: 0 0 200px;
+}
+
+#sidebar h2 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+#sidebar ul {
+  list-style: none;
+}
+
+#sidebar li {
+  margin-bottom: 10px;
+}
+
+#sidebar a {
+  text-decoration: none;
+  color: #3b5998;
+}
+
+#sidebar a:hover {
+  text-decoration: underline;
+}
+
+#content {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  flex: 1;
+}
+
+#content h1 {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input, select {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+input[type="submit"] {
+  background-color: #FFD700;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #000000;
+}
+.success-message {
+  display: flex;
+  align-items: center;
+  background-color: #008000;
+  color: #FFFFFF;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.success-message img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+    </style>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Help</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="sidebar">
+			<h2>Groups</h2>
+			<ul>
+				<li><a href="#">Family</a></li>
+				<li><a href="#">Friends</a></li>
+				<li><a href="#">Work</a></li>
+			</ul>
+		</section>
+		<section id="content">
+			<h1>Phone Number Groups</h1>
+			<form>
+				<label for="group">Group:</label>
+				<select id="group" name="group">
+					<option value="family">Family</option>
+					<option value="friends">Friends</option>
+					<option value="work">Work</option>
+				</select>
+				<br>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name">
+				<br>
+				<label for="phone">Phone:</label>
+				<input type="tel" id="phone" name="phone">
+				<br>
+				<input type="submit" value="Add">
+			</form>
+		</section>
+    <div class="success-message">
+      <img src="check icon.png" alt="Checkmark Icon">
+      <p>Contact added successfully</p>
+    </div>    
+	</main>
+	<footer>
+		<p>&copy; 2023 Phone Number Groups</p>
+	</footer>
+</body>
+</html>

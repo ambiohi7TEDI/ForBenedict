@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Contacts</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+    }
+    
+    header {
+        background-color: #0077B5;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        font-size: 24px;
+    }
+    
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    input[type="text"] {
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    .contact-group {
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .contact-group h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .contact-group ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .contact-group li {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .contact-group li:last-child {
+        border-bottom: none;
+    }
+    
+    .contact-group li .name {
+        font-weight: bold;
+        margin-right: 10px;
+    }
+    
+    .contact-group li .phone {
+        color: #999;
+    }
+    
+    footer {
+        background-color: #0077B5;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+    }
+</style>
+</head>
+<body>
+    <header>
+        ICT Contacts
+    </header>
+    <div class="container">
+        <input type="text" placeholder="Search contacts...">
+        <div class="contact-group">
+            <h3>ICT</h3>
+            <ul>
+                <li>
+                    <span class="name">James Smith</span>
+                    <span class="phone">+1 (555) 123-4567</span>
+                </li>
+                <li>
+                    <span class="name">Rachel Johnson</span>
+                    <span class="phone">+1 (555) 987-6543</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        &copy; 2023 ICT Contacts Inc.
+    </footer>
+</body>
+</html>
