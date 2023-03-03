@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacts</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+                background-color: #f2f2f2;
+            }
+            
+            header {
+              background-color: #ff9900;
+              color: #fff;
+              padding: 10px;
+              text-align: center;
+              font-size: 24px;
+          }
+    
+          header ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+          }
+    
+          header li {
+            margin: 0 10px;
+          }
+    
+          header a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+          }
+    
+          header a:hover {
+            color: #000;
+            background-color: #fff;
+            }
+            
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            
+            h2 {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            
+            input[type="text"] {
+                padding: 10px;
+                width: 100%;
+                margin-bottom: 20px;
+                border: none;
+                border-radius: 5px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            }
+            
+            .contact-group {
+                margin-bottom: 20px;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            
+            .contact-group h3 {
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+            
+            .contact-group ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            
+            .contact-group li {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 0;
+                border-bottom: 1px solid #ccc;
+            }
+            
+            .contact-group li:last-child {
+                border-bottom: none;
+            }
+            
+            .contact-group li .name {
+                font-weight: bold;
+                margin-right: 10px;
+            }
+            
+            .contact-group li .phone {
+                color: #999;
+            }
+            
+            footer {
+                background-color: #0077B5;
+                color: #fff;
+                padding: 10px;
+                text-align: center;
+                font-size: 14px;
+            }
+        </style></head>
+        <body>
+        <header>
+        <nav>
+        <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contacts.html">Contacts</a></li>
+        </ul>
+        </nav>
+        <h1>Contacts</h1>
+        </header>
+        <div class="container">
+        <h2>Contact List</h2>
+        <div class="container">
+        <input type="text" placeholder="Search contacts...">
+        <h3>department</h3>
+        <div class="contact-group">
+            <ul id="contacts--container">
+                
+            <li>
+          </li>
+        </ul>
+    </div>
+    </div>
+    <div class="alone">
+    <button>Add Number</button>
+    </div>
+    <footer>
+      &copy; 2023 My Company
+    </footer>
+    <script src="scripts/contacts.js"></script>
+    </body>
+</html>
